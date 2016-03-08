@@ -1,0 +1,4 @@
+<h2>Latest notices:</h2>
+<% @notices.each do |notice| %>
+  <p><span class="notice-date"><%= time_ago_in_words(notice.created_at) %> ago:</span> <span class="notice-message"><%= notice.message %></span></p>
+<% end %>

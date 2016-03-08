@@ -1,6 +1,6 @@
 class WelcomeController < ApplicationController
   def index
-    render plain: "This is a Rails website."
+    @notices = Notice.all.order(created_at: :desc)
   end
 
   def health
