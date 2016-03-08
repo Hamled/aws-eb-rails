@@ -5,4 +5,9 @@ class WelcomeControllerTest < ActionController::TestCase
     get :index
     assert_response :success
   end
+
+  test "should get health" do
+    get :health
+    assert_response :success
+  end
 end
